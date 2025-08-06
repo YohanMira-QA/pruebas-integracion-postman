@@ -1,27 +1,27 @@
-# Pruebas de Integración con Postman - API Reqres.in
+## API de Pruebas Utilizada: JSONPlaceholder
 
-Este proyecto consiste en una colección de pruebas de integración desarrolladas en Postman para validar el comportamiento de una API REST (Reqres.in). 
+Este proyecto utiliza la API pública gratuita [JSONPlaceholder](https://jsonplaceholder.typicode.com) para simular pruebas CRUD en un entorno seguro y sin necesidad de autenticación.
 
-## 🔧 Tecnologías
+### Endpoints Probados
 
-- Postman
-- API REST pública: https://reqres.in/
-- Formato JSON
-- HTTP Methods: GET, POST
-- Validación de errores y códigos de estado
+- `GET /users` → Listar usuarios
+- `GET /posts/1` → Obtener un post
+- `POST /posts` → Crear un nuevo post
+- `PUT /posts/1` → Actualizar un post
+- `DELETE /posts/1` → Eliminar un post
 
-## ✅ Pruebas incluidas
+### Postman Collection
 
-1. Obtener lista de usuarios (GET)
-2. Crear usuario (POST)
-3. Registro fallido (POST con error simulado)
+Puedes importar esta colección en Postman para probar los endpoints:  
+[`jsonplaceholder_api_collection.json`](./jsonplaceholder_api_collection.json)
 
-## 📂 Uso
+### Herramientas Utilizadas
 
-1. Importa la colección `.json` en Postman
-2. Ejecuta cada prueba
-3. Revisa los tests automáticos en la pestaña `Tests`
+- Postman para pruebas manuales de API
+- JSONPlaceholder como API simulada
+- GitHub para control de versiones
 
-## ✍️ Autor
+---
 
-Proyecto personal de aprendizaje para fortalecer habilidades en pruebas de integración. Julio 2025.
+Esta colección es útil para demostraciones de pruebas de software o QA en convocatorias técnicas.
+
